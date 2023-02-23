@@ -10,7 +10,7 @@ pygame.display.set_caption("Roaring Skies? Speeding Skies?")
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\BiPlane.png")), (176.4, 84))
+        self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\BiPlane.png")), (176.4, 84))
         self.rect = pygame.Rect(0, 0, 140, 44) #126, 60 * 1.3
     def update(self):
         global playerYPos, playerXPos
@@ -41,15 +41,15 @@ class Cloud(pygame.sprite.Sprite):
     def __init__(self, which, posX, posY):
         super().__init__()
         if which == 1: #205, 85
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds1.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds1.png")), (266.5, 110.5))
         if which == 2:
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds2.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds2.png")), (266.5, 110.5))
         if which == 3: 
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds3.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds3.png")), (266.5, 110.5))
         if which == 4: 
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds4.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds4.png")), (266.5, 110.5))
         if which == 5:
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds5.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds5.png")), (266.5, 110.5))
         if which == 6: 
             self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds6.png")), (266.5, 110.5))
         if which == 7: 
