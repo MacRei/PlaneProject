@@ -51,15 +51,15 @@ class Cloud(pygame.sprite.Sprite):
         if which == 5:
             self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds5.png")), (266.5, 110.5))
         if which == 6: 
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds6.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds6.png")), (266.5, 110.5))
         if which == 7: 
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds7.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds7.png")), (266.5, 110.5))
         if which == 8:
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds8.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds8.png")), (266.5, 110.5))
         if which == 9: 
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds9.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds9.png")), (266.5, 110.5))
         if which == 10: 
-            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Clouds\Clouds10.png")), (266.5, 110.5))
+            self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Clouds\Clouds10.png")), (266.5, 110.5))
         self.rect = pygame.Rect(posX, posY, 266.5, 110.5)
     def update(self):
         self.rect.x -= 1 * parallaxSpeed
@@ -76,7 +76,7 @@ parallaxSpeed = 1
 class Missile(pygame.sprite.Sprite):
     def __init__(self, posY, which):
         super().__init__()
-        self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Missiles\Missiles1.png")), (109.2, 15.6))
+        self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Missiles\Missiles1.png")), (109.2, 15.6))
         self.rect = pygame.Rect(-300, posY, 100, 13)
         self.whichMissile = which
         self.animationTimer = pygame.time.get_ticks()
@@ -93,11 +93,11 @@ class Missile(pygame.sprite.Sprite):
             self.touching = False
         if self.whichMissile == "Regular":
             if currentTime - self.animationTimer < 200:
-                self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Missiles\Missiles1.png")), (109.2, 15.6))
+                self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Missiles\Missiles1.png")), (109.2, 15.6))
             elif currentTime - self.animationTimer < 400:
-                self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Missiles\Missiles2.png")), (109.2, 15.6))
+                self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Missiles\Missiles2.png")), (109.2, 15.6))
             elif currentTime - self.animationTimer < 800:
-                self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"C:\Users\reill\OneDrive\Documents\Code\PlaneProjectAssets\PlaneProjectArt\Missiles\Missiles3.png")), (109.2, 15.6))
+                self.image = pygame.transform.scale(pygame.image.load(os.path.join(r"PlaneProjectArt\Missiles\Missiles3.png")), (109.2, 15.6))
             elif currentTime - self.animationTimer < 1200:
                 self.animationTimer = pygame.time.get_ticks()
 missileGroup = pygame.sprite.Group()
